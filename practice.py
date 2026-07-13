@@ -144,12 +144,44 @@
 
 # now a program for a perfect number
 
-num=int(input("enter a number :"))
-original=num
-sum=0
-for i in range(1,num):
-  if(num%i==0):
-    sum+=i
+# num=int(input("enter a number :"))
+# original=num
+# sum=0
+# for i in range(1,num):
+#   if(num%i==0):
+#     sum+=i
 
-if sum==original:
-  print("perfect")
+# if sum==original:
+#   print("perfect")
+
+# now a program for strong number
+
+# def factorial(n):
+#   if (n<=1):
+#     return 1
+
+#   return n*factorial(n-1)
+
+# num=int(input("enter a number :"))
+# sum=0
+# for i in str(num):
+#   sum+=factorial(int(i))
+# print(sum)
+
+# num=int(input("enter an integer value :"))
+
+# for i in range(2,num+1):
+#   while num%i==0:
+#     print(i)
+#     num=num//i
+
+# print prime numbers from 1 to N
+
+num=int(input("enter an integer :"))
+
+
+
+
+
+
+
