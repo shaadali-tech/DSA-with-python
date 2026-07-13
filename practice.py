@@ -133,13 +133,23 @@
 #   maximum+=1
 
 
-num=int(input("enter digits of numbers :"))
-string=str(num)
+# num=int(input("enter digits of numbers :"))
+# string=str(num)
 
+# sum=0
+# for i in string:
+#   sum+=int(i)
+
+# print(sum)
+
+# now a program for a perfect number
+
+num=int(input("enter a number :"))
+original=num
 sum=0
-for i in string:
-  sum+=int(i)
+for i in range(1,num):
+  if(num%i==0):
+    sum+=i
 
-print(sum)
-
-
+if sum==original:
+  print("perfect")
