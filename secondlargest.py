@@ -107,14 +107,35 @@
 
 # print(arr)
 
-arr=[1,0,2,3,0,0,5,3,5,6]
-n=len(arr)
-for i in range(0,n):
-  
+# for i in range(0,n-1):
+#   if(arr[i]==0):
+#     arr[i+1],arr[i]=arr[i],arr[i+1]
+
+# print(arr)
 
 
+arr = [1,0,2,3,0,0,4,5,6,7]
 
+n = len(arr)
 
+temp = []
+count = 0
+
+for i in range(n):
+    if arr[i] != 0:
+        temp.append(arr[i])
+    else:
+        count += 1
+
+nz = len(temp)
+
+for i in range(nz):
+    arr[i] = temp[i]
+
+for i in range(nz, n):
+    arr[i] = 0
+
+print(arr)
 
 
 
