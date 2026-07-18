@@ -114,28 +114,50 @@
 # print(arr)
 
 
+
+# n = len(arr)
+
+# temp = []
+# count = 0
+
+# for i in range(n):
+#     if arr[i] != 0:
+#         temp.append(arr[i])
+#     else:
+#         count += 1
+
+# nz = len(temp)
+
+# for i in range(nz):
+#     arr[i] = temp[i]
+
+# for i in range(nz, n):
+#     arr[i] = 0
+
+# print(arr)
+
+
+
+# Linear Search
 arr = [1,0,2,3,0,0,4,5,6,7]
 
-n = len(arr)
+target=3
+n=len(arr)
+for i in range(0,n):
+  if arr[i]==target:
+    print(i)
 
-temp = []
-count = 0
 
-for i in range(n):
-    if arr[i] != 0:
-        temp.append(arr[i])
-    else:
-        count += 1
 
-nz = len(temp)
 
-for i in range(nz):
-    arr[i] = temp[i]
 
-for i in range(nz, n):
-    arr[i] = 0
 
-print(arr)
+
+
+
+
+
+
 
 
 
