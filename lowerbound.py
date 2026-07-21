@@ -1,6 +1,7 @@
 def lower_bound(nums,target):
-  lb=-1
+ 
   n=len(nums)
+  lb=n
   low=0
   high=n-1
 
@@ -14,3 +15,9 @@ def lower_bound(nums,target):
 
   return lb
 
+
+
+
+nums=[3,4,4,4,8,9,9,10,11,12,12,14,15]
+n=len(nums)
+print(lower_bound(nums,target=11))
